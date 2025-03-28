@@ -1,0 +1,1165 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:		www.addways.eu
+Author: 		www.cpartner.lt
+Version:		1.0.1
+Last change:	13-10-01 19:54
+-------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+
+.sora-prim-font {
+	font-family: "Sora", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html, body {margin:0; padding:0; height: 100%; width:100%;}
+
+body{
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+	color: #000000;
+	min-width: 1020px;
+	background: #accd76 url(../images/bg.png) fixed 50% 0px no-repeat;
+}
+
+body.index{
+	background: #b3cd76 url(../images/bg.png) 50% 0px no-repeat;
+}
+
+body.manage{
+	background: #accd76 url(../images/bg.png) fixed 50% 100px no-repeat;
+}
+
+#holder .ipWidget{
+	margin: 0;
+}
+
+.content-holder h1,
+#holder .ipPreviewWidget h1{
+	color: #c03a3a;
+	font: 50px/40px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder h2,
+#holder .ipPreviewWidget h2,
+#holder  h1.news-title{
+	color: #b83737;
+	font: 36px/40px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder h3,
+#holder .ipPreviewWidget h3{
+	color: #c93737;
+	font: 22px/26px "Sora", arial, verdana, sans-serif;
+}
+
+a{
+	color: #0266ae;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: #81bd11;
+	text-decoration: none;
+}
+
+img {border:none;}
+
+ul {list-style: none;}
+
+#holder, #header, #content, #footer{
+	width: 100%;
+	float: left;
+	display: inline;
+}
+
+#holder{
+	overflow: hidden;
+}
+
+/* ----- #header starts ----- */
+.header-mobile {
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+}
+
+.header-holder{
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.header-holder .header-top{
+	height: 160px;
+}
+
+.header-holder .header-top .header-left {
+	width: 155px;
+	float: left;
+}
+
+
+.header-holder .header-top .phone-email{
+	float: right;
+	color: #ffffff;
+	padding: 40px 0 0 0;
+}
+
+.header-holder .header-top .company-name {
+	float: left;
+	color: #ffffff;
+	padding: 40px 0 0 40px;
+	font: 40px/32px "Sora", arial, verdana, sans-serif;
+}
+
+.header-holder .header-top .company-name h5 {
+	font: 25px/32px "Sora", arial, verdana, sans-serif;
+	padding: 5px 0 0 20px;
+
+}
+
+.header-holder .header-top .phone-email .phone{
+	font: 18px/30px "Sora", arial, verdana, sans-serif;
+	padding: 3px 0 0 24px;
+	background: url(../images/bg_header_phone.png) 0 7px no-repeat;
+}
+
+.header-holder .header-top .phone-email .email{
+	font: 16px/28px "Sora", arial, verdana, sans-serif;
+}
+
+.header-holder .header-top .phone-email .email a{
+	color: #fff;
+	padding: 0 0 0 20px;
+	background: url(../images/bg_header_email.png) 0 7px no-repeat;
+}
+
+.header-holder .header-top .phone-email .email a:hover{
+	color: #75ac37;
+	background: url(../images/bg_header_email.png) 0 -33px no-repeat;
+}
+
+.header-holder .header-top .logo{
+
+	float: left;
+	padding-top: 30px;
+	margin-left: -30px;
+	text-align: center;
+}
+
+.header-holder .header-top .header-right{
+	width: 340px;
+	float: left;
+}
+
+.header-holder .header-top .header-right .top-menu{
+	float: left;
+	padding: 0 0 0 40px;
+	width: 230px;
+}
+
+.header-holder .header-top .header-right .top-menu li{
+	float: left;
+	width: 95px;
+	font: 16px/20px "Sora", arial, verdana, sans-serif;
+	padding: 0 10px 7px 0;
+}
+
+.header-holder .header-top .header-right .top-menu li a{
+	color: #fff;
+}
+
+.header-holder .header-top .header-right .top-menu li a:hover{
+	color: #67aa29;
+}
+
+.header-holder .header-top .header-right .top-menu li.current a,
+.header-holder .header-top .header-right .top-menu li.selected a{
+	color: #00b009;
+	text-decoration: none;
+}
+
+.header-holder .header-top .header-right .linkedin{
+	float: left;
+	min-width: 16px;
+	margin: 62px 0 0 50px;
+}
+
+.header-holder .header-top .header-right .linkedin a{
+	float: left;
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+
+.header-holder .header-top .header-right .linkedin a img{
+	float: left;
+}
+
+.header-holder .header-top .header-right .linkedin a:hover img{
+	margin: -16px 0 0 0;
+}
+
+
+
+
+.header-holder .header-menu{
+	height: 50px;
+	background: #832020;
+	width: 1020px;
+	margin: 0 -25px;
+	overflow: hidden;
+}
+
+.header-holder .header-menu li{
+	float: left;
+	width: 204px;
+	text-align: center;
+	font: 20px/50px "Sora", arial, verdana, sans-serif;
+}
+
+.header-holder .header-menu li.diff{
+	font: 20px/25px "Sora", arial, verdana, sans-serif;
+}
+
+
+.header-holder .header-menu li a{
+	float: left;
+	display: block;
+	width: 204px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-holder .header-menu li.diff a{
+	padding: 5px 0;
+}
+
+.header-holder .header-menu li:nth-child(2) a{
+	background: #8f2323;
+}
+
+.header-holder .header-menu li:nth-child(3) a{
+	background: #a12727;
+}
+
+.header-holder .header-menu li:nth-child(4) a{
+	background: #b32121;
+}
+
+.header-holder .header-menu li:nth-child(5) a{
+	background: #ca2929;
+}
+
+.header-holder .header-menu li.current a,
+.header-holder .header-menu li.selected a{
+	background: #72ae02;
+}
+
+.header-holder .header-menu li a:hover{
+	background: #63ae02;
+}
+
+/* ----- #header ends ----- */
+
+
+
+/* ----- #content starts ----- */
+
+.content-holder{
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.content-holder .index{
+	overflow-y: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.content-holder .index-arrow{
+	height: 205px;
+	width: 200px;
+	position: relative;
+	margin: 0 auto 0;
+	z-index: 1;
+}
+
+
+
+#holder .content-holder .index h3{
+	color: #ffffff;
+	font: 30px/26px "Sora", arial, verdana, sans-serif;
+}
+
+#holder .content-holder .index h2{
+	color: #fff;
+	font: 47px/50px "Sora", arial, verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.content-holder .inner{
+	width: 940px;
+	margin: 0 -25px;
+	background: #ffffff;
+	padding: 40px 40px 50px 40px;
+}
+
+.content-holder .inner-right{
+	width: 930px;
+	float: right;
+}
+
+.content-holder .inner-right .ipPreviewWidget a{
+	color: #6cae02;
+	text-decoration: underline;
+}
+
+.content-holder .inner-right .ipPreviewWidget a:hover{
+	color: #72b000;
+	text-decoration: none;
+}
+
+.content-holder .inner-right h1{
+	padding: 0 0 22px 0;
+}
+
+.content-holder .inner-right h2{
+	padding: 2px 0 14px 0;
+}
+
+.content-holder .inner-right h3{
+	padding: 0 0 10px 0;
+	margin: -2px 0 0px 0;
+}
+
+.content-holder .inner-right p{
+	padding: 0 0 22px 0;
+	margin: 0 0 0px 0;
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right img{
+	margin: 5px 20px 5px 0;
+	padding: 1px;
+	border: 2px solid #f2f2f2;
+
+}
+
+#lmap img {
+	border: none !important;;
+}
+
+.content-holder .inner-right .ipPreviewWidget  ul{
+	margin: 0px 0px 20px 0;
+}
+
+.content-holder .inner-right ul li{
+	padding: 0 0 4px 18px;
+	list-style: none;
+	background: url(../images/bg_ul_li.gif) 0 4px no-repeat;
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget  ol{
+	margin: 0px 0px 20px 0;
+}
+
+.content-holder .inner-right ol li{
+	color: #7bb000;
+	padding: 0 0 4px 0px;
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right ol li span{
+	color: #000;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table{
+	margin: 0px 0px 20px 0;
+	width: auto;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table th{
+	padding: 0px 20px 0px 0;
+	text-align: left;
+	vertical-align: top;
+	background: none;
+	color: #000;
+	font: 16px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table td{
+	padding: 0px 20px 0px 0;
+	text-align: left;
+	vertical-align: top;
+	background: none;
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+	border: none;
+	color: #000;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table.table{
+	margin: 5px 0px 22px -2px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table.table th,
+.content-holder .inner-right .ipPreviewWidget  table.table thead td{
+	color: #fff;
+	background: #7bb000;
+	padding: 4px 20px 5px 20px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	font: 16px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table.table tbody td{
+	padding: 6px 20px 0px 20px;
+	border-left: 2px solid #fff;
+	background: #efefef;
+}
+
+.content-holder .inner-right .ipPreviewWidget  table.table tbody tr:last-child td{
+	padding: 6px 20px 12px 20px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .gallery{
+	margin: 0px 0px 0 -10px;
+	width: 1020px;
+	float: left;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .gallery ul{
+	margin: 0;
+	clear: left;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .gallery li{
+	padding: 0;
+	background: none;
+	text-align: center;
+	margin: 0 0 15px 10px;
+	font: 16px/20px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget .gallery .galleryThree li img{
+	margin: 10px 0 2px 0;
+	height: 200px;
+	width: 300px;
+	float: left;
+}
+
+.content-holder .inner-right .ipPreviewWidget .gallery .galleryFour li img{
+	margin: 10px 0 2px 0;
+	height: 200px;
+	width: 220px;
+	float: left;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .map{
+	margin: 5px 0px 22px 0px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .map #map{
+	height: 460px;
+}
+
+#holder .content-holder .inner-right  .ipWidget-IpFaq {
+	margin: 0 0 22px 0;
+	padding-top: 17px;
+	border-top: 1px dotted #b00014;
+	clear: both;
+}
+
+#holder .content-holder .inner-right  .ipLayout-expanded{
+	margin: 0 0 22px 0;
+	padding-top: 5px;
+	border-top: none;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq .ipwQuestion {
+	color: #7aae02;
+	font: 18px/22px "Sora", arial, verdana, sans-serif;
+	border-bottom: 1px dashed #7aae02;
+	float: left;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq .ipwQuestion:before {
+	background: url(../images/bg_faq.gif) 0 0 no-repeat;
+	border: none;
+	content: "";
+	width: 21px;
+	height: 21px;
+	margin-top: 0px;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq  .ipwExpanded .ipwQuestion {
+	text-decoration: none;
+	color: #7bb000;
+	border-bottom: 1px dashed #fff;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq  .ipwExpanded .ipwQuestion:before {
+	background: url(../images/bg_faq.gif) -1020px 0 no-repeat;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq .ipwQuestion:hover {
+	text-decoration: none;
+	color: #8ab000;
+	border-bottom: 1px dashed #fff;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq .ipwAnswer {
+	clear: both;
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+
+.content-holder .inner-right  .ipWidget-IpFaq .ipwAnswer p {
+	padding: 0;
+}
+
+.content-holder .inner-right  .ipModuleForm {
+	border: none;
+	background: #72ae02;
+	margin: 5px 0 22px 0;
+	max-width: 311px;
+	padding: 25px;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset{
+	border: none;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmField {
+	margin: 0 0 5px 0;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmControl {
+	width: 216px;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmField .ipmLabel{
+	color: #fff;
+	padding-top: 6px;
+	text-align: right;
+	font: 16px/18px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmError .ipmLabel{
+	color: #cfff4b;
+}
+
+.ipmErrorMessage{
+	display: none!important;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-text .ipmControlInput ,
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-email .ipmControlInput ,
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-captcha .ipmControlInput {
+	border: none;
+	border-bottom: 1px solid #0073c6;
+	border-top: 1px solid #004271;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 21px;
+	width: 196px;
+	padding: 5px 10px 5px 10px;
+	font: 16px/21px "Sora", arial, verdana, sans-serif;
+	background: #597a00; /* Old browsers */
+	background: -moz-linear-gradient(top, #00477a 0%, #005491 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00477a), color-stop(100%,#005491)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00477a 0%,#005491 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00477a 0%,#005491 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00477a 0%,#005491 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00477a 0%,#005491 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00477a', endColorstr='#005491',GradientType=0 ); /* IE6-9 */
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-textarea .ipmControlTextarea  {
+	border: none;
+	border-bottom: 1px solid #0073c6;
+	border-top: 1px solid #004271;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 91px;
+	min-width: 201px;
+	width: 201px;
+	max-width: 201px;
+	padding: 5px 5px 5px 10px;
+	font: 16px/21px "Sora", arial, verdana, sans-serif;
+	background: #417a00; /* Old browsers */
+	background: -moz-linear-gradient(top, #00477a 0%, #005491 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00477a), color-stop(100%,#005491)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00477a 0%,#005491 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00477a 0%,#005491 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00477a 0%,#005491 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00477a 0%,#005491 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00477a', endColorstr='#005491',GradientType=0 ); /* IE6-9 */
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmField  img{
+	padding: 0;
+	border: none;
+	margin: 5px 0 0 0;
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-submit .ipmControlSubmit  {
+	border: none;
+	border-bottom: 1px solid #003358;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	height: 50px;
+	width: 216px;
+	padding: 0;
+	font: 20px/30px "Sora", arial, verdana, sans-serif;
+	background: #529100; /* Old browsers */
+	background: -moz-linear-gradient(top, #005491 0%, #004270 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#005491), color-stop(100%,#004270)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #005491 0%,#004270 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #005491 0%,#004270 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #005491 0%,#004270 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #005491 0%,#004270 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005491', endColorstr='#004270',GradientType=0 ); /* IE6-9 */
+}
+
+.content-holder .inner-right  .ipModuleForm .ipmFieldset .ipmType-submit .ipmControlSubmit:hover  {
+	-webkit-box-shadow: 0px 0px 0px 0px #000000;
+	box-shadow: 0px 0px 0px 0px #000000;
+	border-bottom: none;
+	background: #497000; /* Old browsers */
+	background: -moz-linear-gradient(top, #004270 0%, #005491 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004270), color-stop(100%,#005491)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #004270 0%,#005491 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #004270 0%,#005491 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #004270 0%,#005491 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #004270 0%,#005491 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004270', endColorstr='#005491',GradientType=0 ); /* IE6-9 */
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list{
+	margin: 0px 0px 22px 0px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .back-to-list{
+	margin: 5px 0px 10px 0px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new{
+	padding: 20px 0px 20px 0px;
+	border-top: 1px dotted #00b009;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new:first-child{
+	padding: 0px 0px 20px 0px;
+	border-top: 0;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new p{
+	padding: 0px;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new img{
+	float: left;
+}
+
+#holder .content-holder .inner-right .ipPreviewWidget  .news-list .one-new h2{
+	padding: 0px 0px 2px 0px;
+	font: 22px/28px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new h2 span.date{
+	font: 14px/20px "Sora", arial, verdana, sans-serif;
+}
+
+.content-holder .inner-right .ipPreviewWidget  .news-list .one-new .ipWidget:after {
+	clear: none;
+}
+
+.content-holder .inner-right h1.news-title {
+    padding: 0 0 10px;
+}
+
+.content-holder .inner-left{
+	width: 175px;
+	float: left;
+}
+
+.content-holder .inner-left .submenu{
+	width: 175px;
+	float: left;
+	padding: 23px 0 30px 0;
+}
+
+#holder .content-holder .inner-left .submenu h2{
+	font: 30px/34px "Sora", arial, verdana, sans-serif;
+	padding: 0 0 25px 0;
+}
+
+.content-holder .inner-left .submenu ul li{
+	font: 20px/24px "Sora", arial, verdana, sans-serif;
+	padding: 6px 0 10px 0;
+}
+
+.content-holder .inner-left .submenu ul li.current a,
+.content-holder .inner-left .submenu ul li.selected a {
+	color: #0fb000;
+	text-decoration: none;
+}
+
+.content-holder .inner-left .submenu ul li ul{
+	display: none;
+}
+
+.content-holder .inner-left .submenu ul li.current ul,
+.content-holder .inner-left .submenu ul li.selected ul{
+	display: block;
+	margin: 0 0 6px 0;
+}
+
+.content-holder .inner-left .submenu ul li.current ul li,
+.content-holder .inner-left .submenu ul li.selected ul li{
+	font: 16px/22px "Sora", arial, verdana, sans-serif;
+	padding: 12px 0 0px 16px;
+}
+
+.content-holder .inner-left .submenu ul li.current ul li a,
+.content-holder .inner-left .submenu ul li.selected ul li a{
+	color: #0266ae;
+	text-decoration: underline;
+}
+
+.content-holder .inner-left .submenu ul li.selected ul li.current a,
+.content-holder .inner-left .submenu ul li.selected ul li.selected a{
+	color: #00b00f;
+	text-decoration: none;
+}
+
+.content-holder .inner-left .submenu ul li.current ul li a:hover,
+.content-holder .inner-left .submenu ul li.selected ul li a:hover{
+	color: #00b00f;
+	text-decoration: none;
+}
+
+.content-holder .inner-left .left-block{
+	width: 175px;
+	float: left;
+	padding: 0 0 30px 0;
+}
+
+/* ----- #content ends ----- */
+
+/* Button for contact */
+.button-59 {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #b0f334;
+  box-sizing: border-box;
+  color: #b1e620;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: rgb(241, 73, 30);
+  color: #FF512F;
+  fill: #FF512F;
+}
+
+.button-59:active {
+  border-color: #FF512F;
+  color: #FF512F;
+  fill: #FF512F;
+}
+
+@media (min-width: 991px) {
+  .button-59 {
+    min-width: 190px;
+  }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px; 
+}
+
+/* ----- #form starts ----- */
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; /* Adjust gap between elements as needed */
+	margin: 20px 0;
+  }
+  
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .row .col {
+	padding: 0 0;
+	box-sizing: border-box;
+	flex: 1;
+  }
+  
+  .row .col.x-50 {
+	  flex: 1;
+	  max-width: calc(30% - 20px);
+	  box-sizing: border-box; 
+  }
+  .row .col.x-100 {
+	flex: 0 0 100%;
+	max-width: 60%;
+	box-sizing: border-box; 
+}
+  
+  .content-wrapper {
+	min-height: 100%;
+	position: relative;
+  }
+  
+  .get-in-touch {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  .contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.line-field {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 40px;
+}
+
+  .get-in-touch .title {
+	  color: #ffffff;
+	  padding: 45px 20px; 
+	  margin: 10px 0 0;
+	  font-size: 30px;
+	  text-transform: uppercase;
+	  font-weight: 700;
+  
+  }
+  
+  .contact-form .form-field {
+		background-color: rgba(255, 255, 255, 0.8);
+		border: solid 1px #FF512F;
+		width: 100%;
+		height: 68px;
+		padding: 13px;
+		position: relative;
+		margin-bottom: 10px;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+  
+  }
+  .contact-form .input-text {
+	  background-color: transparent;
+	  padding: 10px 15px;
+	  border: none;
+	  -moz-border-radius: 0;
+	  -webkit-border-radius: 0;
+	  border-radius: 0;
+	  -moz-box-shadow: none;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+	  height: auto;
+	  position: relative;
+	  z-index: 2;
+	  font-size: 18px;
+	  color: #333333;
+	  width: 100%;
+  }
+  
+  .contact-form .input-text:focus {
+	  top: 4px;
+  }
+  
+  
+  .contact-form label {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	bottom: 20px;
+	font-family: "Sora", serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: #888;
+	cursor: text;
+	transition: transform 0.2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+	  background-color: rgba(255, 255, 255, 0.8);
+	  color: #ff7c62;
+	  font-size: 26px;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	  text-align: center;
+	  -moz-border-radius: 2px;
+	  -webkit-border-radius: 2px;
+	  border-radius: 2px;
+	  -moz-transition: all 0.3s ease;
+	  -o-transition: all 0.3s ease;
+	  -webkit-transition: all 0.3s ease;
+	  transition: all 0.3s ease;
+	  padding: 0 60px;
+	  height: 60px;
+	  border: none;
+	  width: 100%;
+  }
+  
+  .contact-form .submit-btn:hover, .contact-form .submit-btn:focus {
+	  background-color: white;
+	}
+  
+	.contact-form .form-field.focus {
+	  background-color: #fff;
+	  border: solid 1px #fb2900;
+	}
+	.contact-form .form-field.textarea {
+	  height: auto;
+	}
+  
+	.contact-form .form-field.textarea .input-text {
+	  height: auto;
+	  resize: none;
+	  min-height: 100px;
+	}
+  
+
+/* ----- #form ends ----- */
+
+
+/* ----- #footer starts ----- */
+
+.footer-holder{
+	width: 1020px;
+	margin: 0px auto;
+	color: #fff;
+}
+
+.footer-holder .footer-top{
+	width: 1020px;
+	margin: 0px -25px;
+	color: #fff;
+}
+
+#holder .footer-holder .footer-top h2{
+	color: #fff;
+	padding: 0 0 12px 0;
+	font: 26px/22px "Sora", arial, verdana, sans-serif;
+}
+
+#holder .footer-holder .footer-top p{
+	line-height: 22px;
+}
+
+.footer-holder .footer-top .ipPreviewWidget  ul{
+	margin: 0px 0px 6px 0;
+}
+
+.footer-holder .footer-top ul li{
+	padding: 0 0 4px 15px;
+	list-style: none;
+	background: url(../images/bg_ul_li_index.png) 0 4px no-repeat;
+	font: 14px/22px "Sora", arial, verdana, sans-serif;
+}
+
+.footer-holder .footer-top .ipPreviewWidget  table {
+	margin: 0px 0px 20px -14px;
+}
+
+.footer-holder .footer-top .ipPreviewWidget  table td{
+	vertical-align: top;
+	background: none;
+	color: #fff;
+	text-align: left;
+	padding: 0 0 0 14px;
+	font: 12px/18px "Sora", arial, verdana, sans-serif;
+}
+
+.footer-holder .footer-top .footer-col {  /*image 400 width and 350 height */
+	width: 300px;
+	padding: 30px 10px 0 30px;
+	float:left;
+	height: 290px;
+	position: relative;
+}
+
+.footer-holder .footer-top .footer-col1{
+	background: url(../images/bg_footer_col1.jpg) 0 0 no-repeat;
+	z-index: 3;
+}
+
+.footer-holder .footer-top .footer-col2{
+	background: url(../images/bg_footer_col2.jpg) 0 0 no-repeat;
+	z-index: 2;
+}
+
+.footer-holder .footer-top .footer-col3{
+	background: url(../images/bg_footer_col3.jpg) 0 0 no-repeat;
+	z-index: 1;
+}
+
+.footer-holder .footer-center{
+	width: 1020px;
+	padding: 45px 15px 35px 0;
+}
+
+.footer-holder .footer-center .footer-logo {
+	float: left;
+	width: 200px;
+}
+
+.footer-logo img {
+	padding: 20px 0 0 0;
+}
+
+#holder .footer-holder .footer-center h3{
+	color: #fff;
+	padding: 0 0 10px 0;
+	font: 22px/28px "Sora", arial, verdana, sans-serif;
+}
+
+.footer-holder .footer-center .footer-nr{
+	float: left;
+	padding: 0 15px 0 20px;
+	font: 40px/36px "Sora", arial, verdana, sans-serif;
+}
+
+.footer-holder .footer-center .footer-text{
+	float: left;
+	width: 190px;
+	font: 16px/20px "Sora", arial, verdana, sans-serif;
+}
+
+.footer-holder .footer-center .footer-text p {
+	padding: 10px 0 0 0;
+}
+
+.footer-holder .footer-bottom{
+	width: 980px;
+	padding: 18px 40px 24px 40px;
+	margin: 0px -25px;
+	text-align: right;
+	font: 12px/18px "Sora", arial, verdana, sans-serif;
+	background: url(../images/bg_footer_bottom.png) 0 0 repeat-x;
+}
+
+.footer-holder .footer-bottom a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-holder .footer-bottom a:hover{
+	color: #00b00f;
+}
+
+.footer-holder .footer-bottom .footer-copy p {
+	float: left;
+}
+
+.footer-holder .footer-bottom .footer-copy p a{
+	float: left;
+}
+
+.footer-holder .footer-bottom .footer-secure{
+	float: left;
+	padding: 0 0 0 20px;
+}
+
+
+.footer-holder .footer-bottom .footer-solution .solution{
+	float: right;
+	padding: 0 5px 0 0;
+}
+
+.footer-holder .footer-bottom .footer-solution .solution-link{
+	float: left;
+}
+
+.footer-holder .footer-bottom .footer-solution .solution-link a{
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ----- #footer ends ----- */
+
+
+.my_clear{
+	clear: both;
+}
